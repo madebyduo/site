@@ -1,10 +1,10 @@
 {
   "name": "duo",
+  "main": "www/index.html",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node www/index.html"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,4 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
   },
-  "scripts": {
-    "start": "node www/index.html"
-  }
 }
