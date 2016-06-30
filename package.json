@@ -19,8 +19,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
-  }
-
+  },
   "scripts": {
     "start": "node www/index.html"
   },
