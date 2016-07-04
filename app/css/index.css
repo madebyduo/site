@@ -105,7 +105,8 @@ section.hero {
   section.hero a {
     margin: 0;
     font-size: 18px;
-    display: inline-block;
+    width: 192px;
+    display: block;
     text-decoration: none;
     position: relative;
     color: #999;
