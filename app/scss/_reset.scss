@@ -58,3 +58,28 @@ p {
 .whitespace {
     flex: 1;
 }
+
+.underline {
+      position: absolute;
+      bottom: 11px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: ease-in-out .1s all;
+      
+      transform: translateY(30%) rotate(180deg);
+
+      &:hover {
+        bottom: 7px;
+
+        &--path {
+          stroke: $brand;
+        }
+      }
+      
+      &--path {
+        fill: transparent;
+        stroke: #999;
+        stroke-width: 1px;
+      }
+  }

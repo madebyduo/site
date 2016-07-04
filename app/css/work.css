@@ -1,0 +1,86 @@
+.hero-cont {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  margin: 80px 0 0 0; }
+
+section.work {
+  width: 100%;
+  margin: 100px 0 0 0;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw; }
+  section.work .work-item {
+    width: calc(50% - 10px);
+    min-height: 450px;
+    margin: 0 20px 20px 0;
+    background: #F2F7FF;
+    padding: 40px;
+    display: flex;
+    box-sizing: border-box;
+    animation: fadeUp .3s linear;
+    position: relative;
+    transition: all ease-in-out .1s; }
+    section.work .work-item.facebook {
+      background: #F5F7FB; }
+      section.work .work-item.facebook a {
+        color: #4267B2; }
+    section.work .work-item.mailbox {
+      background: #F2F7FF; }
+      section.work .work-item.mailbox a {
+        color: #5890FF; }
+    section.work .work-item.twocards {
+      background: #F5FBF9; }
+      section.work .work-item.twocards a {
+        color: #0ECB6E; }
+    section.work .work-item.switch {
+      background: #F2F7FF; }
+      section.work .work-item.switch a {
+        color: #6336FF; }
+    section.work .work-item.large {
+      min-height: 915px; }
+      section.work .work-item.large img {
+        max-width: 340px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    section.work .work-item:nth-child(2n+2) {
+      margin: 0 0 20px 0; }
+    section.work .work-item:hover a {
+      padding: 0 0 10px 0; }
+    section.work .work-item h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+      width: 50%;
+      display: inline-block; }
+    section.work .work-item a {
+      margin: 0;
+      width: 50%;
+      text-align: right; }
+
+footer {
+  width: calc(100% - 160px);
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 100px 0 80px 0; }
+  footer img {
+    width: 40px; }
+  footer ul {
+    margin: 40px 0 0 0;
+    color: #7a7a7a; }
+
+@keyframes fadeUp {
+  0% {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0; }
+  100% {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1; } }

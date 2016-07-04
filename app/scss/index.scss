@@ -10,11 +10,17 @@ html, body {
 	line-height: 28px;
 	margin: 0;
 	height: 100%;
-	overflow: hidden;
+	width: 100%;
 }
 
 .cont {
-	padding: 80px;
+	width: 100%;
+	padding: 0 80px 0 80px;
+	box-sizing: border-box;
+}
+
+.hero-cont {
+	width: 100%;
 	box-sizing: border-box;
 	display: flex;
     flex-direction: column;
@@ -27,7 +33,7 @@ header {
 	}
 }
 
-section {
+section.hero {
 	max-width: 410px;
 
 	p {
@@ -43,33 +49,8 @@ section {
 		color: #999;
 		transition: ease-in-out .1s all;
 
-		.underline {
-		  position: absolute;
-		  bottom: 11px;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  transition: ease-in-out .1s all;
-		  
-		  transform: translateY(30%) rotate(180deg);
-		  
-		  &--path {
-		    fill: transparent;
-		    stroke: #999;
-		    stroke-width: 1px;
-		  }
-		}
-
 		&:hover {
-			color: $brand;
-
-			.underline {
-				bottom: 7px;
-
-				&--path {
-	    			stroke: $brand;
-	  			}
-			}			
+			color: $brand;		
 		}
 	}
 }
