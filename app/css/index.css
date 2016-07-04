@@ -60,9 +60,7 @@ p {
   transition: ease-in-out .1s all;
   transform: translateY(30%) rotate(180deg); }
   .underline:hover {
-    bottom: 7px; }
-    .underline:hover--path {
-      stroke: #6336FF; }
+    bottom: 6px; }
   .underline--path {
     fill: transparent;
     stroke: #999;
@@ -78,14 +76,10 @@ html, body {
   height: 100%;
   width: 100%; }
 
-.cont {
-  width: 100%;
-  padding: 0 80px 0 80px;
-  box-sizing: border-box; }
-
 .hero-cont {
   width: 100%;
   box-sizing: border-box;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
@@ -107,6 +101,8 @@ section.hero {
     transition: ease-in-out .1s all; }
     section.hero a:hover {
       color: #6336FF; }
+      section.hero a:hover--path {
+        stroke: #6336FF; }
 
 .bg-cont {
   position: absolute;
@@ -114,7 +110,7 @@ section.hero {
   right: 0;
   overflow: hidden;
   width: 256px;
-  height: 1005px;
+  height: 100%;
   margin: 0 80px 0 0; }
   .bg-cont .bg {
     width: 100%;
