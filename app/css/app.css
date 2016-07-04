@@ -67,8 +67,8 @@ p {
 html, body {
   background: #fff;
   font-family: "Atlas Grotesk Web";
-  font-size: 1em;
-  color: #111;
+  font-size: 18px;
+  color: #22222a;
   line-height: 1.6;
   margin: 0;
   height: 100%;
@@ -93,13 +93,11 @@ header img {
   height: 40px; }
 
 section.hero {
-  max-width: 420px;
-  font-size: 18px; }
+  max-width: 420px; }
   section.hero p {
     margin: 0 0 40px 0; }
   section.hero a {
     margin: 0;
-    font-size: 18px;
     width: 200px;
     display: block;
     text-decoration: none;
