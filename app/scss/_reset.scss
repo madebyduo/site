@@ -11,6 +11,7 @@ html, body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased !important;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
@@ -24,13 +25,11 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 }
 
 @font-face {
-    font-family: 'Moderat';
-    src: url('../fonts/moderat-regular-webfont.eot');
-    src: url('../fonts/moderat-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/moderat-regular-webfont.woff2') format('woff2'),
-         url('../fonts/moderat-regular-webfont.woff') format('woff'),
-         url('../fonts/moderat-regular-webfont.ttf') format('truetype'),
-         url('../fonts/moderat-regular-webfont.svg#moderatregular') format('svg');
+    font-family: 'Fakt';
+    src: url('../fonts/FaktPro-Normal.eot');
+    src: url('../fonts/FaktPro-Normal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FaktPro-Normal.woff') format('woff'),
+         url('../fonts/FaktPro-Normal.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

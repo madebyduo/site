@@ -1,0 +1,16 @@
+@import "_vars";
+@import "_reset";
+
+html, body {
+	background: #fff;
+	font-family: $font-stack;
+	font-size: 1em;
+	color: #111;
+	line-height: 1.7;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+@import "_index";
+@import "_work";

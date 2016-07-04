@@ -1,12 +1,13 @@
 html, body {
   border: 0;
   font-size: 100%;
-  font-family: "Moderat";
+  font-family: "Fakt";
   font: inherit;
   vertical-align: baseline;
   font-weight: 400;
   -webkit-font-smoothing: antialiased !important;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -18,9 +19,9 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   vertical-align: baseline; }
 
 @font-face {
-  font-family: 'Moderat';
-  src: url("../fonts/moderat-regular-webfont.eot");
-  src: url("../fonts/moderat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moderat-regular-webfont.woff2") format("woff2"), url("../fonts/moderat-regular-webfont.woff") format("woff"), url("../fonts/moderat-regular-webfont.ttf") format("truetype"), url("../fonts/moderat-regular-webfont.svg#moderatregular") format("svg");
+  font-family: 'Fakt';
+  src: url("../fonts/FaktPro-Normal.eot");
+  src: url("../fonts/FaktPro-Normal.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-Normal.woff") format("woff"), url("../fonts/FaktPro-Normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -76,10 +77,10 @@ p {
 
 html, body {
   background: #fff;
-  font-family: "Moderat";
+  font-family: "Fakt";
   font-size: 1em;
   color: #111;
-  line-height: 28px;
+  line-height: 1.7;
   margin: 0;
   height: 100%;
   width: 100%; }
@@ -96,16 +97,17 @@ html, body {
       padding: 40px; } }
 
 header img {
-  height: 50px; }
+  height: 40px; }
 
 section.hero {
-  max-width: 410px; }
+  max-width: 410px;
+  font-size: 17px; }
   section.hero p {
     margin: 0 0 40px 0; }
   section.hero a {
     margin: 0;
-    font-size: 18px;
-    width: 192px;
+    font-size: 17px;
+    width: 180px;
     display: block;
     text-decoration: none;
     position: relative;
@@ -142,3 +144,90 @@ section.hero {
     transform: translate3d(0, 0, 0); }
   100% {
     transform: translate3d(0, -1005px, 0); } }
+
+#work .hero-cont {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  margin: 80px 0 0 0; }
+
+#work section.work {
+  width: 100%;
+  margin: 100px 0 0 0;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw; }
+  #work section.work .work-item {
+    width: calc(50% - 10px);
+    min-height: 450px;
+    margin: 0 20px 20px 0;
+    background: #F2F7FF;
+    padding: 40px;
+    display: flex;
+    box-sizing: border-box;
+    animation: fadeUp .3s linear;
+    position: relative;
+    transition: all ease-in-out .1s; }
+    #work section.work .work-item.facebook {
+      background: #F5F7FB; }
+      #work section.work .work-item.facebook a {
+        color: #4267B2; }
+    #work section.work .work-item.mailbox {
+      background: #F2F7FF; }
+      #work section.work .work-item.mailbox a {
+        color: #5890FF; }
+    #work section.work .work-item.twocards {
+      background: #F5FBF9; }
+      #work section.work .work-item.twocards a {
+        color: #0ECB6E; }
+    #work section.work .work-item.switch {
+      background: #F2F7FF; }
+      #work section.work .work-item.switch a {
+        color: #6336FF; }
+    #work section.work .work-item.large {
+      min-height: 915px; }
+      #work section.work .work-item.large img {
+        max-width: 340px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    #work section.work .work-item:nth-child(2n+2) {
+      margin: 0 0 20px 0; }
+    #work section.work .work-item:hover a {
+      padding: 0 0 10px 0; }
+    #work section.work .work-item h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+      width: 50%;
+      display: inline-block; }
+    #work section.work .work-item a {
+      margin: 0;
+      width: 50%;
+      text-align: right; }
+
+#work footer {
+  width: calc(100% - 160px);
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 100px 0 80px 0; }
+  #work footer img {
+    width: 40px; }
+  #work footer ul {
+    margin: 40px 0 0 0;
+    color: #7a7a7a; }
+
+@keyframes fadeUp {
+  0% {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0; }
+  100% {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1; } }
