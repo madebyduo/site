@@ -3,13 +3,17 @@
 
 html, body {
 	background: #fff;
-	font-family: $font-stack;
-	font-size: 1em;
-	color: #111;
-	line-height: 1.7;
+	font-family: $font;
+	font-size: $base-font-size;
+	color: #22222a;
+	line-height: $line-height;
 	margin: 0;
 	height: 100%;
 	width: 100%;
+	-webkit-font-smoothing: antialiased !important;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 0;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 @import "_index";
