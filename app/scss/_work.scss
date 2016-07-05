@@ -11,8 +11,8 @@
 
 .iphone-video {
 	position: absolute;
+	width: 80%;
 	max-width: 360px;
-	width: 58%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -23,69 +23,81 @@
 
 	video {
 		position: absolute;
-    	width: 79.6%;
-    	left: 10.2%;
-    	top: 14.3%;
+    	width: 80.5%;
+    	left: 9.8%;
+    	top: 14.1%;
 	}
 }
 
 section.work {
 	width: calc(100% - 140px);
 	margin: 0 auto;
-	display: -webkit-box; 
-  display: -webkit-flex; 
-  display: -ms-flexbox; 
-  display: flex; 
-  -webkit-box-orient: vertical; 
-  -webkit-box-direction: normal; 
-  -webkit-flex-direction: column; 
-      -ms-flex-direction: column; 
-          flex-direction: column; 
-  -webkit-flex-wrap: wrap; 
-      -ms-flex-wrap: wrap; 
-          flex-wrap: wrap;
-  height: calc(100% - 140px);
 
 	@media screen and (max-width: $break-small) {
-    	width: calc(100% - 80px)
-  	}
+   		width: calc(100% - 80px);
+	}
 
-	.work-item {
-		width: 50%;
-		min-height: 450px;
-		margin: 0 20px 20px 0;
+	.work-wrapper {
 		display: flex;
-		position: relative;
+    	flex-wrap: wrap;
+    	max-height: 1405px;
+    	flex-direction: column;
 
-		@media screen and (max-width: $break-small) {
-    		width: 100%;
-    		margin: 20px 0 40px 0px;
-  		}
+    	@media screen and (max-width: $break-small) {
+	   		flex-wrap: nowrap;
+	  	}
 
-		&.facebook { background: #F5F7FB; a { color: #4267B2; } }
-		&.mailbox { background: #F2F7FF; a { color: #5890FF; } }
-		&.twocards { background: #F5FBF9; a { color: #0ECB6E; } }
-		&.switch { background: #F2F7FF; a { color: #6336FF; } }
+		.work-item {
+			width: calc(100% * (1/2) - 10px;
+			min-height: 450px;
+			position: relative;
+			display: flex;
+    		margin: 0 20px 20px 0;
+    		box-sizing: border-box;
+    		flex-grow: 1;
+    		overflow: hidden;
 
-		&.large {
-			min-height: 915px;
-		}
+			@media screen and (max-width: $break-small) {
+	    		width: 100%;
+	  		}
 
-		&:nth-child(2n+2) {
-			margin: 0 0 20px 0;
-		}
+			&.spareroom { background: #F5F7FB; a { color: #4267B2; } }
+			&.mailbox { background: #F2F7FF; a { color: #5890FF; } }
+			&.twocards { background: #F5FBF9; a { color: #0ECB6E; } }
+			&.switch { background: #F2F7FF; a { color: #6336FF; } }
 
-		h4 {
-			margin: 0;
-			font-weight: 500;
-			width: 50%;
-			display: inline-block;
-		}
+			&.large {
+				min-height: 915px;
+			}
 
-		a {
-			margin: 0;
-			width: 50%;
-			text-align: right;
+			&:nth-child(2n+2) {
+				margin: 0 0 20px 0;
+			}
+
+			h4 {
+				margin: 40px 0 0 40px;
+				font-weight: 500;
+				width: 50%;
+				display: inline-block;
+			}
+
+			a {
+				margin: 0;
+				width: 50%;
+				text-align: right;
+				margin: 40px 40px 0 0;
+			}
+
+			img.macbook {
+				max-height: 500px;
+				position: absolute;
+				top: 110px;
+				right: 0%;
+
+				&.twocards {
+					left: 0%
+				}
+			}
 		}
 	}
 }
