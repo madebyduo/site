@@ -85,7 +85,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 930px) {
     .hero-cont {
       padding: 40px; } }
 
@@ -126,7 +126,7 @@ section.hero {
     left: 0px;
     position: absolute;
     animation: scroll 40s linear infinite; }
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 930px) {
     .bg-cont {
       display: none; } }
 
@@ -144,27 +144,50 @@ section.hero {
   min-height: 60vh;
   margin: 80px 0 0 0; }
 
+#work .iphone-video {
+  position: absolute;
+  max-width: 360px;
+  width: 58%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  #work .iphone-video img {
+    max-width: 100%; }
+  #work .iphone-video video {
+    position: absolute;
+    width: 79.6%;
+    left: 10.2%;
+    top: 14.3%; }
+
 #work section.work {
-  width: 100%;
-  margin: 100px 0 0 0;
+  width: calc(100% - 140px);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  -ms-flex-direction: column;
-  -ms-flex-wrap: wrap;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 100vw; }
+  height: calc(100% - 140px); }
+  @media screen and (max-width: 930px) {
+    #work section.work {
+      width: calc(100% - 80px); } }
   #work section.work .work-item {
-    width: calc(50% - 10px);
+    width: 50%;
     min-height: 450px;
     margin: 0 20px 20px 0;
-    background: #F2F7FF;
-    padding: 40px;
     display: flex;
-    box-sizing: border-box;
-    animation: fadeUp .3s linear;
-    position: relative;
-    transition: all ease-in-out .1s; }
+    position: relative; }
+    @media screen and (max-width: 930px) {
+      #work section.work .work-item {
+        width: 100%;
+        margin: 20px 0 40px 0px; } }
     #work section.work .work-item.facebook {
       background: #F5F7FB; }
       #work section.work .work-item.facebook a {
@@ -183,19 +206,10 @@ section.hero {
         color: #6336FF; }
     #work section.work .work-item.large {
       min-height: 915px; }
-      #work section.work .work-item.large img {
-        max-width: 340px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
     #work section.work .work-item:nth-child(2n+2) {
       margin: 0 0 20px 0; }
-    #work section.work .work-item:hover a {
-      padding: 0 0 10px 0; }
     #work section.work .work-item h4 {
       margin: 0;
-      font-size: 16px;
       font-weight: 500;
       width: 50%;
       display: inline-block; }
