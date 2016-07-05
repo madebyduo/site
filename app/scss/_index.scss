@@ -1,7 +1,7 @@
 .hero-cont {
 	width: 100%;
 	box-sizing: border-box;
-	padding: 80px;
+	padding: 70px;
 	display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,12 +13,12 @@
 
 header {
 	img {
-		height: 40px;
+		height: 46px;
 	}
 }
 
 section.hero {
-	max-width: 420px;
+	max-width: 500px;
 
 	p {
 		margin: 0 0 40px 0;
