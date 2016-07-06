@@ -61,17 +61,13 @@ section.work {
 	    		width: 100%;
 	  		}
 
-			&.spareroom { background: #F5F7FB; a { color: #4267B2; } }
-			&.mailbox { background: #F2F7FF; a { color: #5890FF; } }
-			&.twocards { background: #F5FBF9; a { color: #0ECB6E; } }
-			&.switch { background: #F2F7FF; a { color: #6336FF; } }
+			&.spareroom { background: rgba($spareroom, .05); a { color: $spareroom; } }
+			&.mailbox { background: rgba($mailbox, .05); a { color: $mailbox; } }
+			&.twocards { background: rgba($twocards, .05); a { color: $twocards; } }
+			&.switch { background: rgba($switch, .05); a { color: $switch; } }
 
 			&.large {
 				min-height: 915px;
-			}
-
-			&:nth-child(2n+2) {
-				margin: 0 0 20px 0;
 			}
 
 			h4 {
@@ -92,11 +88,6 @@ section.work {
 				max-height: 500px;
 				position: absolute;
 				top: 110px;
-				right: 0%;
-
-				&.twocards {
-					left: 0%
-				}
 			}
 		}
 	}

@@ -184,25 +184,23 @@ section.hero {
         #work section.work .work-wrapper .work-item {
           width: 100%; } }
       #work section.work .work-wrapper .work-item.spareroom {
-        background: #F5F7FB; }
+        background: rgba(0, 84, 128, 0.05); }
         #work section.work .work-wrapper .work-item.spareroom a {
-          color: #4267B2; }
+          color: #005480; }
       #work section.work .work-wrapper .work-item.mailbox {
-        background: #F2F7FF; }
+        background: rgba(81, 185, 219, 0.05); }
         #work section.work .work-wrapper .work-item.mailbox a {
-          color: #5890FF; }
+          color: #51b9db; }
       #work section.work .work-wrapper .work-item.twocards {
-        background: #F5FBF9; }
+        background: rgba(36, 204, 130, 0.05); }
         #work section.work .work-wrapper .work-item.twocards a {
-          color: #0ECB6E; }
+          color: #24CC82; }
       #work section.work .work-wrapper .work-item.switch {
-        background: #F2F7FF; }
+        background: rgba(6, 168, 174, 0.05); }
         #work section.work .work-wrapper .work-item.switch a {
-          color: #6336FF; }
+          color: #06A8AE; }
       #work section.work .work-wrapper .work-item.large {
         min-height: 915px; }
-      #work section.work .work-wrapper .work-item:nth-child(2n+2) {
-        margin: 0 0 20px 0; }
       #work section.work .work-wrapper .work-item h4 {
         margin: 40px 0 0 40px;
         font-weight: 500;
@@ -216,10 +214,7 @@ section.hero {
       #work section.work .work-wrapper .work-item img.macbook {
         max-height: 500px;
         position: absolute;
-        top: 110px;
-        right: 0%; }
-        #work section.work .work-wrapper .work-item img.macbook.twocards {
-          left: 0%; }
+        top: 110px; }
 
 #work footer {
   width: calc(100% - 160px);
