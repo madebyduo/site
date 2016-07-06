@@ -69,14 +69,12 @@ html, body {
   font-family: "Atlas Grotesk Web";
   font-size: 18px;
   color: #22222a;
-  line-height: 1.7;
+  line-height: 1.5;
   margin: 0;
   height: 100%;
   width: 100%;
-  -webkit-font-smoothing: antialiased !important;
-  text-rendering: optimizeLegibility;
-  letter-spacing: 0;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0; }
 
 .hero-cont {
   width: 100%;
