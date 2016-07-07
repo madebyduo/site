@@ -1,3 +1,7 @@
+#index {
+	background: $brand;
+	color: #fff;
+
 .hero-cont {
 	width: 100%;
 	box-sizing: border-box;
@@ -14,14 +18,19 @@
 header {
 	img {
 		height: 46px;
+		fill: #fff;
 	}
 }
 
 section.hero {
-	max-width: 500px;
+	max-width: 550px;
 
 	p {
 		margin: 0 0 40px 0;
+
+		span {
+			opacity: 0.7;
+		}
 	}
 
 	a {
@@ -30,15 +39,15 @@ section.hero {
 		display: block;
 		text-decoration: none;
 		position: relative;
-		color: #999;
+		color: #fff;
 		transition: ease-in-out .1s all;
 
 		&:hover {
-			color: $brand;
+			color: #fff;
 
 			.underline {
 				&--path {
-					stroke: $brand;
+					stroke: #fff;
 				}
 			}
 		}
@@ -77,4 +86,6 @@ section.hero {
 	100% {
 		transform: translate3d(0, -1005px, 0);
 	}
+}	
+
 }

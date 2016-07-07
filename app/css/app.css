@@ -76,57 +76,60 @@ html, body {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0; }
 
-.hero-cont {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 70px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
-  @media screen and (max-width: 960px) {
-    .hero-cont {
-      padding: 40px; } }
-
-header img {
-  height: 46px; }
-
-section.hero {
-  max-width: 500px; }
-  section.hero p {
-    margin: 0 0 40px 0; }
-  section.hero a {
-    margin: 0;
-    width: 200px;
-    display: block;
-    text-decoration: none;
-    position: relative;
-    color: #999;
-    transition: ease-in-out .1s all; }
-    section.hero a:hover {
-      color: #6336FF; }
-      section.hero a:hover .underline--path {
-        stroke: #6336FF; }
-
-.bg-cont {
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  width: 256px;
-  height: 100%;
-  margin: 0 80px 0 0; }
-  .bg-cont .bg {
+#index {
+  background: #6336FF;
+  color: #fff; }
+  #index .hero-cont {
     width: 100%;
-    height: 2010px;
-    background: url("../images/bg.png");
-    background-size: 256px;
-    background-repeat: repeat-y;
-    left: 0px;
+    box-sizing: border-box;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; }
+    @media screen and (max-width: 960px) {
+      #index .hero-cont {
+        padding: 40px; } }
+  #index header img {
+    height: 46px;
+    fill: #fff; }
+  #index section.hero {
+    max-width: 550px; }
+    #index section.hero p {
+      margin: 0 0 40px 0; }
+      #index section.hero p span {
+        opacity: 0.7; }
+    #index section.hero a {
+      margin: 0;
+      width: 200px;
+      display: block;
+      text-decoration: none;
+      position: relative;
+      color: #fff;
+      transition: ease-in-out .1s all; }
+      #index section.hero a:hover {
+        color: #fff; }
+        #index section.hero a:hover .underline--path {
+          stroke: #fff; }
+  #index .bg-cont {
     position: absolute;
-    animation: scroll 40s linear infinite; }
-  @media screen and (max-width: 960px) {
-    .bg-cont {
-      display: none; } }
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 256px;
+    height: 100%;
+    margin: 0 80px 0 0; }
+    #index .bg-cont .bg {
+      width: 100%;
+      height: 2010px;
+      background: url("../images/bg.png");
+      background-size: 256px;
+      background-repeat: repeat-y;
+      left: 0px;
+      position: absolute;
+      animation: scroll 40s linear infinite; }
+    @media screen and (max-width: 960px) {
+      #index .bg-cont {
+        display: none; } }
 
 @keyframes scroll {
   0% {
