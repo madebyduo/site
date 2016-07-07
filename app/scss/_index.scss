@@ -1,14 +1,17 @@
 #index {
 	background: $brand;
 	color: #fff;
+	display: flex;
+    flex-direction: column;
+
+.whitespace {
+    flex: 1;
+}
 
 .hero-cont {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 70px;
-	display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 
     @media screen and (max-width: $break-small) {
     	padding: 40px;

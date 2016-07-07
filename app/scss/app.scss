@@ -8,21 +8,20 @@ html, body {
 	color: #22222a;
 	line-height: $line-height;
 	margin: 0;
-	height: 100%;
 	width: 100%;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 0;
 }
 
 header {
-	width: calc(100% - 160px);
+	width: calc(100% - 140px);
 	margin: 0 auto 0 auto;
 	padding: 70px 0 0 0;
 	box-sizing: border-box;
 	min-height: 100px;
 
 	img {
-		width: 40px;
+		width: 50px;
 	}	
 }
 
@@ -33,7 +32,7 @@ footer {
 	padding: 70px 0 100px 0;
 
 	img {
-		width: 40px;
+		width: 30px;
 	}
 
 	ul {
