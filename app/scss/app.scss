@@ -14,5 +14,34 @@ html, body {
 	letter-spacing: 0;
 }
 
+header {
+	width: calc(100% - 160px);
+	margin: 0 auto 0 auto;
+	padding: 70px 0 0 0;
+	box-sizing: border-box;
+	min-height: 100px;
+
+	img {
+		width: 40px;
+	}	
+}
+
+footer {
+	width: calc(100% - 160px);
+	margin: 0 auto;
+	min-height: 100px;
+	padding: 70px 0 100px 0;
+
+	img {
+		width: 40px;
+	}
+
+	ul {
+		margin: 40px 0 0 0;
+		color: #7a7a7a;
+	}
+}
+
 @import "_index";
 @import "_work";
+@import "_case"

@@ -69,12 +69,32 @@ html, body {
   font-family: "Atlas Grotesk Web";
   font-size: 18px;
   color: #22222a;
-  line-height: 1.5;
+  line-height: 1.7;
   margin: 0;
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0; }
+
+header {
+  width: calc(100% - 160px);
+  margin: 0 auto 0 auto;
+  padding: 70px 0 0 0;
+  box-sizing: border-box;
+  min-height: 100px; }
+  header img {
+    width: 40px; }
+
+footer {
+  width: calc(100% - 160px);
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 70px 0 100px 0; }
+  footer img {
+    width: 40px; }
+  footer ul {
+    margin: 40px 0 0 0;
+    color: #7a7a7a; }
 
 #index {
   background: #6336FF;
@@ -137,14 +157,6 @@ html, body {
   100% {
     transform: translate3d(0, -1005px, 0); } }
 
-#work .hero-cont {
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-height: 60vh;
-  margin: 80px 0 0 0; }
-
 #work .iphone-video {
   position: absolute;
   width: 80%;
@@ -162,7 +174,7 @@ html, body {
 
 #work section.work {
   width: calc(100% - 140px);
-  margin: 0 auto; }
+  margin: 70px auto 0 auto; }
   @media screen and (max-width: 960px) {
     #work section.work {
       width: calc(100% - 80px); } }
@@ -219,17 +231,6 @@ html, body {
         position: absolute;
         top: 110px; }
 
-#work footer {
-  width: calc(100% - 160px);
-  margin: 0 auto;
-  min-height: 100px;
-  padding: 100px 0 80px 0; }
-  #work footer img {
-    width: 40px; }
-  #work footer ul {
-    margin: 40px 0 0 0;
-    color: #7a7a7a; }
-
 @keyframes fadeUp {
   0% {
     transform: translate3d(0, 40px, 0);
@@ -237,3 +238,57 @@ html, body {
   100% {
     transform: translate3d(0, 0px, 0);
     opacity: 1; } }
+
+#case .case-grid {
+  width: flex;
+  max-width: 760px;
+  margin: 100px auto 0 auto; }
+  #case .case-grid h3 {
+    float: right;
+    font-size: 20px;
+    font-family: "Atlas Grotesk Web";
+    position: relative; }
+  #case .case-grid h1 {
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-family: "Atlas Grotesk Web"; }
+  #case .case-grid p {
+    margin-bottom: 100px; }
+  #case .case-grid img {
+    width: 150%;
+    height: auto;
+    margin: 0 0 100px -25%;
+    border: 0; }
+  #case .case-grid video {
+    width: 150%;
+    max-height: 800px;
+    margin: 0 0 100px -25%;
+    border: 0; }
+  @media only screen and (max-width: 700px) {
+    #case .case-grid .logo {
+      margin-top: 20px; }
+    #case .case-grid h1 {
+      font-size: 40px;
+      margin-top: 60px;
+      margin-bottom: 20px; }
+    #case .case-grid p {
+      font-size: 16px; }
+    #case .case-grid img {
+      width: 100%;
+      margin-left: 0; } }
+
+#case .cta {
+  width: 100%;
+  height: 120px;
+  background: rgba(99, 54, 255, 0.05);
+  line-height: 120px;
+  text-align: center;
+  color: #6336FF; }
+
+@media only screen and (max-width: 700px) {
+  #case .logo {
+    width: 40px;
+    margin-bottom: 24px; }
+  #case p {
+    float: none; } }

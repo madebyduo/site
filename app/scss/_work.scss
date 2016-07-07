@@ -1,14 +1,5 @@
 #work {
 
-.hero-cont {
-	width: 100%;
-	box-sizing: border-box;
-	display: flex;
-    flex-direction: column;
-    min-height: 60vh;
-    margin: 80px 0 0 0;
-}
-
 .iphone-video {
 	position: absolute;
 	width: 80%;
@@ -31,7 +22,7 @@
 
 section.work {
 	width: calc(100% - 140px);
-	margin: 0 auto;
+	margin: 70px auto 0 auto;
 
 	@media screen and (max-width: $break-small) {
    		width: calc(100% - 80px);
@@ -90,22 +81,6 @@ section.work {
 				top: 110px;
 			}
 		}
-	}
-}
-
-footer {
-	width: calc(100% - 160px);
-	margin: 0 auto;
-	min-height: 100px;
-	padding: 100px 0 80px 0;
-
-	img {
-		width: 40px;
-	}
-
-	ul {
-		margin: 40px 0 0 0;
-		color: #7a7a7a;
 	}
 }
 
