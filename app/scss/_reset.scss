@@ -77,3 +77,42 @@ p {
         stroke-width: 1px;
       }
   }
+
+  .cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+  div.left-2-col {
+    span {
+      float: left;
+      width: 25%;
+    }
+  }
+
+  div.right-1-col {
+    width: 50%;
+    float: right;
+
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }

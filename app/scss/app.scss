@@ -11,33 +11,44 @@ html, body {
 	width: 100%;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 0;
+	box-sizing: border-box;
 }
 
 header {
-	width: calc(100% - 140px);
-	margin: 0 auto 0 auto;
-	padding: 70px 0 0 0;
-	box-sizing: border-box;
-	min-height: 100px;
+	max-width: 1060px;
+	margin: 60px auto 0 auto;
 
 	img {
-		width: 50px;
-	}	
+		width: 36px;
+	}
+
+	nav {
+		float: right;
+
+		a {
+			color: #77777A;
+			text-decoration: none;
+			margin: 0 0 0 50px;
+		}
+	}
 }
 
 footer {
-	width: calc(100% - 160px);
-	margin: 0 auto;
-	min-height: 100px;
-	padding: 70px 0 100px 0;
+	max-width: 1060px;
+	margin: 0 auto 100px auto;
+	color: #77777A;
+	border-top: 1px solid #E8E8E8;
+	padding: 50px 0 0 0;
 
-	img {
-		width: 30px;
+	span {
+		width: 50%;
+		display: block;
 	}
 
-	ul {
-		margin: 40px 0 0 0;
-		color: #7a7a7a;
+	div.left-2-col {
+		span {
+			margin: 50px 0 0 0;
+		}
 	}
 }
 
