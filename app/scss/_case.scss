@@ -1,9 +1,18 @@
 #case {
 
+	a {
+		color: inherit;
+	}
+	a:hover {
+		color: $brand;
+	}
+
 	.lead {
 		max-width: 1060px;
 		height: 420px;
 		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
 
 		h1 {
 			margin: 150px 0 0 0;
@@ -14,9 +23,14 @@
     		}
 		}
 
+
 		div.left-2-col {
 			margin-top: 50px;
 			color: $light-grey;
+
+				@media screen and (max-width: $break-small) {
+      				font-size: 16px;
+    			}
 		}
 	}
 
@@ -27,12 +41,17 @@
 		position: relative;
 		text-align: center;
 
+
+			@media screen and (max-width: $break-small) {
+      				display: none;
+    			}
+
 		video {
 			position: absolute;
 			left: 50%;
 			top: 50%;
   			transform: translate(-49.8%, -49.8%);
-  			width: 18.2%;
+  			max-width: 14.7%;
   			max-width: 259px;
 		}
 
@@ -44,18 +63,85 @@
 			left: 50%;
   			transform: translate(-54.4%);
 		}
+
+	}
+
+	.mobile-lead {
+		display: none;
+		width: 100%;
+		height: auto;
+		background: #F3F3F3;
+		position: relative;
+		text-align: center;
+
+
+				@media screen and (max-width: $break-small) {
+      				display: block;
+    			}
+
+    	.image-wrapper {
+			max-width: 482px;
+			margin: auto;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		img {
+			margin-top: 90px;
+			width: 100%;
+		}
+
+	}
+
+	.lead-image {
+		height: auto;
+		background: #F3F3F3;
+		position: relative;
+		text-align: center;
+
+
+		.image-wrap {
+			max-width: 700px;
+			margin: auto;
+		}
+		img {
+			margin-top: 100px;
+			width: 100%;
+			margin-bottom: 100px;
+		}
 	}
 
 	article {
 		max-width: 1060px;
 		margin: 75px auto 75px auto;
+		padding-left: 20px;
+		padding-right: 20px;
 
 		h1 {
 			float: left;
-			width: 50%;
+			width: 44%;
+
+				@media screen and (max-width: $break-small) {
+      				width: 100%;
+      				margin-bottom: 20px;
+      				font-size: 22px;
+      				line-height: 1.4;
+    			}
 		}
 
+		p {
+			font-size: 18px;
+
+			@media screen and (max-width: $break-small) {
+      				font-size: 16px;
+    			}
+		}
+
+
 		img {
+			width: 100%;
+			margin: 50px 0 50px 0;
+		}
+		video {
 			width: 100%;
 			margin: 50px 0 50px 0;
 		}

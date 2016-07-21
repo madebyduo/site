@@ -25,63 +25,65 @@ section.work {
 	margin: 70px auto 0 auto;
 
 	@media screen and (max-width: $break-small) {
-   		width: calc(100% - 80px);
+   		width: calc(100% - 40px);
+   		margin-bottom: 60px;
 	}
 
-	.work-wrapper {
-		display: flex;
-    	flex-wrap: wrap;
-    	max-height: 1405px;
-    	flex-direction: column;
+	img {
+		width: 100%;
+	}
 
-    	@media screen and (max-width: $break-small) {
-	   		flex-wrap: nowrap;
-	  	}
-
-		.work-item {
-			width: calc(100% * (1/2) - 10px;
-			min-height: 450px;
-			position: relative;
-			display: flex;
-    		margin: 0 20px 20px 0;
-    		box-sizing: border-box;
-    		flex-grow: 1;
-    		overflow: hidden;
+	.row {
+		width: 100%;
+		margin-bottom: 80px;
 
 			@media screen and (max-width: $break-small) {
-	    		width: 100%;
-	  		}
-
-			&.spareroom { background: rgba($spareroom, .05); a { color: $spareroom; } }
-			&.mailbox { background: rgba($mailbox, .05); a { color: $mailbox; } }
-			&.twocards { background: rgba($twocards, .05); a { color: $twocards; } }
-			&.switch { background: rgba($switch, .05); a { color: $switch; } }
-
-			&.large {
-				min-height: 915px;
-			}
-
-			h4 {
-				margin: 40px 0 0 40px;
-				font-weight: 500;
-				width: 50%;
-				display: inline-block;
-			}
+				   		margin-bottom: 0;
+					}
 
 			a {
-				margin: 0;
-				width: 50%;
-				text-align: right;
-				margin: 40px 40px 0 0;
+				color: inherit;
 			}
 
-			img.macbook {
-				max-height: 500px;
-				position: absolute;
-				top: 110px;
+			p {
+				margin-top: 20px;
+				margin-bottom: -10px;
+
+				@media screen and (max-width: $break-small) {
+				   		font-size: 16px;
+				   		margin-top: 10px;
+					}
 			}
-		}
+
+			.left {
+				width: 48%;
+
+					@media screen and (max-width: $break-small) {
+				   		width: 100%;
+					}
+			}
+			.right {
+				width: 48%;
+				margin-left: 3%;
+
+				@media screen and (max-width: $break-small) {
+				   		width: 100%;
+				   		margin-left: 0;
+					}
+			}
+
+			@media screen and (max-width: $break-small) {
+				   	
+				   	img {
+				   		margin-top: 40px;
+				   	}
+			}
 	}
+
+	.row div {
+		display: inline-block;
+	}
+
 }
 
 @keyframes fadeUp {

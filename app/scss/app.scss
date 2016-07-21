@@ -17,6 +17,8 @@ html, body {
 header {
 	max-width: 1060px;
 	margin: 60px auto 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	img {
 		width: 36px;
@@ -38,11 +40,17 @@ footer {
 	margin: 0 auto 100px auto;
 	color: #77777A;
 	border-top: 1px solid #E8E8E8;
-	padding: 50px 0 0 0;
+	padding: 50px 20px 0 20px;
+
+		@media screen and (max-width: $break-small) {
+      			font-size:16px;
+    		}
 
 	span {
-		width: 50%;
+		width: 100%;
 		display: block;
+
+		
 	}
 
 	div.left-2-col {
